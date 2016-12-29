@@ -1,4 +1,4 @@
 class Group < ActiveRecord::Base
-  has_many :user
+  belongs_to :user
   validates :title, presence: true
 end
